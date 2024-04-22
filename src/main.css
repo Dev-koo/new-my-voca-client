@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-black text-white flex justify-center items-center border border-red-600 h-screen max-w-4xl;
+	}
+
+	#root {
+		@apply w-full max-w-[560px] mx-6;
+	}
+
+	.icon {
+		@apply w-[44px] h-[44px] p-1.5 hover:cursor-pointer;
+	}
+}
