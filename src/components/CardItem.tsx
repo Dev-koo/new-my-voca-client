@@ -1,22 +1,22 @@
-import { Volume2 } from 'lucide-react';
-import { CardType } from '../types';
-import DisplayLevel from './DisplayLevel';
-import { useEffect, useState } from 'react';
+import { Volume2 } from 'lucide-react'
+import { CardType } from '../types'
+import DisplayLevel from './DisplayLevel'
+import { useEffect, useState } from 'react'
 type Props = {
-	card: CardType;
-	showMean: boolean;
-};
+	card: CardType
+	showMean: boolean
+}
 
 const CardItem = ({ card, showMean: showMeanFromParent }: Props) => {
-	const [showMean, setShowMean] = useState(false);
+	const [showMean, setShowMean] = useState(false)
 
 	useEffect(() => {
-		setShowMean(showMeanFromParent);
-	}, [showMeanFromParent]);
+		setShowMean(showMeanFromParent)
+	}, [showMeanFromParent])
 
 	const handleClick = () => {
-		setShowMean(!showMean);
-	};
+		setShowMean(!showMean)
+	}
 
 	return (
 		<div className='bg-neutral-900 p-5 mb-5 rounded-2xl' onClick={handleClick}>
@@ -28,7 +28,7 @@ const CardItem = ({ card, showMean: showMeanFromParent }: Props) => {
 			{showMean && <div className='text-2xl'>{card.mean}</div>}
 			<DisplayLevel level={card.level} />
 		</div>
-	);
-};
+	)
+}
 
-export default CardItem;
+export default CardItem

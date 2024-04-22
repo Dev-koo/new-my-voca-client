@@ -1,17 +1,14 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import React from 'react';
-import AppLayout from '../layouts/AppLayout';
-import Setting from '../pages/Setting';
-import { useNavigate } from 'react-router-dom';
+import { ChevronLeft } from 'lucide-react'
+import AppLayout from '../layouts/AppLayout'
+import Setting from '../pages/Setting'
+import { useNavigate } from 'react-router-dom'
 
-type Props = {};
-
-const MultipleChoice = ({}: Props) => {
-	const navigate = useNavigate();
+const MultipleChoice = () => {
+	const navigate = useNavigate()
 	// 뒤로가기 버튼을 누르면 이전 페이지로 이동 하는 함수
 	const handleClick = () => {
-		navigate(-1);
-	};
+		navigate(-1)
+	}
 
 	return (
 		<AppLayout>
@@ -22,7 +19,7 @@ const MultipleChoice = ({}: Props) => {
 			</header>
 			<Setting />
 		</AppLayout>
-	);
-};
+	)
+}
 
-export default MultipleChoice;
+export default MultipleChoice

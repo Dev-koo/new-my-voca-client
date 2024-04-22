@@ -1,22 +1,20 @@
-import React from 'react';
-
 type Props = {
-	level: string;
-};
+	level: string
+}
 
 const DisplayLevel = ({ level }: Props) => {
 	const getLevel = (level: string) => {
 		switch (level) {
 			case '어려워요':
-				return 'bg-red-500';
+				return 'bg-red-500'
 			case '애매해요':
-				return 'bg-yellow-500';
+				return 'bg-yellow-500'
 			case '외웠어요':
-				return 'bg-green-500';
+				return 'bg-green-500'
 			default:
-				break;
+				break
 		}
-	};
+	}
 
 	return (
 		<>
@@ -25,7 +23,7 @@ const DisplayLevel = ({ level }: Props) => {
 				<div className={`ml-2 w-3 h-3 ${getLevel(level)} rounded-full`}></div>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default DisplayLevel;
+export default DisplayLevel

@@ -1,8 +1,8 @@
-import { ChevronDown, Languages, Menu, Search } from 'lucide-react';
-import { useShowMean } from '../contexts/ShowMeanContext';
+import { ChevronDown, Languages, Menu, Search } from 'lucide-react'
+import { useShowMean } from '../contexts/ShowMeanContext'
 
 export default function Header() {
-	const { handleToggle } = useShowMean();
+	const { handleToggle } = useShowMean()
 
 	return (
 		<header className=' grid grid-cols-3 mx-5'>
@@ -16,5 +16,5 @@ export default function Header() {
 				<Search className='icon' />
 			</div>
 		</header>
-	);
+	)
 }
