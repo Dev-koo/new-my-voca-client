@@ -1,9 +1,6 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import React from 'react';
+import { ChevronRight } from 'lucide-react'
 
-type Props = {};
-
-const Setting = ({}: Props) => {
+const Setting = () => {
 	return (
 		<>
 			<div className='p-5 hover:cursor-pointer mb-5'>
@@ -36,7 +33,7 @@ const Setting = ({}: Props) => {
 				</div>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default Setting;
+export default Setting

@@ -1,16 +1,13 @@
-import { useState } from 'react';
-import { CardType } from '../types';
-import CardItem from './CardItem';
-import useToggle from '../hooks/useToggle';
-import { Languages } from 'lucide-react';
-import { useShowMean } from '../contexts/ShowMeanContext';
+import { CardType } from '../types'
+import CardItem from './CardItem'
+import { useShowMean } from '../contexts/ShowMeanContext'
 
 type Props = {
-	cards: CardType[];
-};
+	cards: CardType[]
+}
 
 const CardList = ({ cards }: Props) => {
-	const { showMean } = useShowMean();
+	const { showMean } = useShowMean()
 
 	return (
 		<>
@@ -23,7 +20,7 @@ const CardList = ({ cards }: Props) => {
 				))}
 			</ul>
 		</>
-	);
-};
+	)
+}
 
-export default CardList;
+export default CardList
