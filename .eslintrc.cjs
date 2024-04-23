@@ -16,7 +16,10 @@ module.exports = {
 	rules: {
 		'react-refresh/only-export-components': [
 			'warn',
-			{ allowConstantExport: true },
+			{ 
+				allowConstantExport: true,
+				allowExportNames: ["useShowMean"]
+			},
 		],
 		'unused-imports/no-unused-imports': 'error',
     'react/react-in-jsx-scope': 'off',
